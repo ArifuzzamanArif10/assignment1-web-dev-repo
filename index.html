@@ -7,7 +7,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,27 +16,24 @@
 
   <link rel="stylesheet" href="styles/portfolio.css">
 </head>
-<body class="raleway-font">
+<body   class="background-page-color"  class="raleway-font">
 
-  <!-- Header -->
 <header class="header">
 
-    <div class="header-container">
-      <div class="logo">LOGO</div>
-      <button class="nav-button">Sign Up</button>
-    </div>
-  
+  <!-- Navbar Section -->
+  <div class="header-container">
+    <div class="logo">LOGO</div>
+    <button class="nav-button">Sign Up</button>
+  </div>
 
-  <!-- Hero Section -->
-  
-    <div class="her-container">
-       <h1 class="hero-title">Cool Dark UI Template for Webflow Agencies!</h1>
+  <!-- Hero Content -->
+  <div class="container">
+    <h1 class="hero-title">Cool Dark UI Template for Webflow Agencies!</h1>
+    <button class="nav-button">Stay Focused</button>
+  </div>
 
-       <button class="nav-button">Stay Focused</button>
-      
-      </div>
- 
 </header>
+
 
 
 
@@ -44,35 +41,41 @@
     <!-- see in action -->
  <section class="see-in-action">
     <div class="unique-section">
-           <h2 class="section-title dark-2">See It in Action</h2>
+           <h2 class="section-title">See It in Action</h2>
             <p class="section-subtitle">Explore the live preview and imagine your brand in this bold new look.</p>
 
-       <button class="nav-button section-button">Launch Live Preview</button>
+            <button class="nav-button ">Launch Live Preview</button>
     </div>
         <img  class="section-image" src='../Assets/wc-mini.png' alt="Video Preview">
        
 </section>
 
 
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="stats-title">
+  <!-- Stats Section / joined thousands -->
+  <section class="status">
+    
+      <div class="stats-title">
         <h3>Joined Thousands of Productive Users</h3>
-    </div>
-    <div class="stats-container">
-       <div class="state-box">
-         <h2>50K</h2>
-         <p>Active Users</p>
+        </div>
+      <div class="stats-containers">
+
+       <div class="stats-container">
+         <h2 class="number">50K</h2>
+         <p class="font-2">Active Users</p>
        </div>
-       <div class="state-box">
-         <h2>2M+</h2>
-         <p>Focus Sessions</p>
+
+       <div class="stats-container">
+         <h2 class="number">2M+</h2>
+         <p class="font-2">Focus Sessions</p>
        </div>
-       <div class="state-box">
-         <h2>95%</h2>
-         <p>Satisfaction Rate</p>
+
+       <div class="stats-container">
+         <h2 class="number">95%</h2>
+         <p class="font-2">Satisfaction Rate</p>
        </div>
-    </div>
+
+     </div>
+   
   </section>
 
   <!-- Testimonials -->
@@ -89,8 +92,8 @@
      <img src="Assets/icon-star.png" alt="star">
      <img src="Assets/icon-star.png" alt="star">
 </div>
-<h3 >Loved by Designers</h3>
-<p>This template instantly leveled up our presence.” – Studio Vertex</p>
+<h3 class="testimonial-header">Loved by Designers</h3>
+<p class="testimonial-description">This template instantly leveled up our presence.” – Studio Vertex</p>
 <div class="reviewer">
    <img src="Assets/avatar.png" alt="Reviewer">
   <div>
@@ -100,8 +103,7 @@
 </div>
 </div>
 
-<!-- Repeat the same structure for other cards -->
-<!-- ... -->
+
 
 <div class="testimonial-card-2">
 <div class="stars">
@@ -111,8 +113,8 @@
      <img src="Assets/icon-star.png" alt="star">
      <img src="Assets/icon-star.png" alt="star">
 </div>
-<h3>Loved by Designers</h3>
-<p>This template instantly leveled up our presence.” – Studio Vertex</p>
+<h3 class="testimonial-header">Loved by Designers</h3>
+<p class="testimonial-description">This template instantly leveled up our presence.” – Studio Vertex</p>
 <div class="reviewer">
    <img src="Assets/avatar.png" alt="Reviewer">
   <div>
@@ -122,8 +124,7 @@
 </div>
 </div>
 
-<!-- Repeat the same structure for other cards -->
-<!-- ... -->
+
 
 <div class="testimonial-card-3">
 <div class="stars">
@@ -133,8 +134,8 @@
      <img src="Assets/icon-star.png" alt="star">
      <img src="Assets/icon-star.png" alt="star">
 </div>
-<h3>Loved by Designers</h3>
-<p>This template instantly leveled up our presence.” – Studio Vertex</p>
+<h3 class="testimonial-header">Loved by Designers</h3>
+<p class="testimonial-description">This template instantly leveled up our presence.” – Studio Vertex</p>
 <div class="reviewer">
    <img src="Assets/avatar.png" alt="Reviewer">
   <div>
@@ -143,35 +144,38 @@
   </div>
 </div>
 </div>
-
-
 </div>
-
 </section>
 
+  <!-- Lets get in touch section -->
 
+
+<section class="contact-section">
+   <div class="contact-container">
+
+       <div class="contact-text">
+         <h2>Let's Get in Touch</h2>
+      </div>
+
+<!-- Right Form -->
+     <form class="contact-form">
+        <label for="email">Email</label>
+         <input type="email" placeholder="example@email.com" required>
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="full name" required>
+
+        <label for="message">Message</label>
+         <textarea placeholder="write your message..." required></textarea>
+
+         <button type="submit">Get in Touch</button>
+   </form>
+  </div>
+</section>
   
 
-  <!-- Contact Form -->
-  <section class="contact">
-    <div class="container contact-container">
-      <h2>Let's Get in Touch</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="logo">LOGO</div>
-      <p>© 2025 Assignment 1. All rights reserved.</p>
-    </div>
-  </footer>
 
-</body>
-</html>
+ 
+
+  
