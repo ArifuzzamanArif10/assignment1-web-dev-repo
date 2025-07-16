@@ -249,7 +249,7 @@
 
 }
 .testimonial-card-2{
-   padding: 24px 24px;
+  padding: 24px 24px;
   gap: 24px;
   border-radius: 14px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -260,50 +260,85 @@
   padding: 24px 24px;
   gap: 24px;
   border-radius: 14px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(36, 29, 29, 0.5);
   border: 1px solid rgba(242, 237, 237, 1);
   box-sizing: border-box;
 }
 
 /* lets get in touch section */
 
-.contact-section {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: auto;
-   max-width: 1140px;
-   margin-top: 92.23px;
-   margin-right: 150px;
-   margin-bottom: 14px;
-   margin-left: 150px;
-   padding-top: 71px;
-   padding-bottom: 71px;
-
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 100px;
+  margin-bottom: 14px;
+  padding-top: 71px;
+  padding-bottom: 71px;
+  box-sizing: border-box;
+  border: 1px solid #000000;
 }
-/* flex-wrap: wrap; */
 
-
+.contact-text {
+  width: 528px;
+  box-sizing: border-box;
+}
 
 .contact-text h2 {
-font-size: 97px;
-font-weight: bold;
-margin-top: 200px;
-margin-right: 612px;
-margin-bottom: 200px;
-max-width: 528px;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 97px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #000000;
 }
 
- .contact-form {
-display: flex;
-flex-direction: column;  
-gap: 19px;
- max-width: 497px 
-
-.contact-text{
-  padding-top: 129px;
-  padding-bottom: 129px;
-  padding-right: 115px;
-
+.form {
+  width: 497px;
+  padding-left: 0; 
+  box-sizing: border-box;
 }
 
+.form-items {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.form-items input,
+.form-items textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+.form-items textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.nav-button {
+  height: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #4E47FF;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 36px;
+  cursor: pointer;
+  
+}
+
+.nav-button:hover {
+  background-color: #3b38d2;
+}
