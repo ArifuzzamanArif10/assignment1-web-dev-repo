@@ -342,3 +342,45 @@
 .nav-button:hover {
   background-color: #3b38d2;
 }
+
+
+/* footer section */
+.footer {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+.footer-logo {
+  color: #4E47FF;
+  font-size: 100px;
+  font-weight:900;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-description {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #7E7E7E;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #7E7E7E;
+  font-weight: 500;
+  font-size: 14px;
+}
